@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Inventory management system
+    </title>
+    <link rel="stylesheet" href="/static/post_index.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="/static/images/logo.jpeg" alt="logo" class="logo">
+            </a>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="/static/images/3lines.png" width="100" height="100" alt="Toogle Menu" class="menu"
+                        id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="/static/images/exit.jpg" width="5" height="50"
+                            alt="exit"></li>
+                    <li><a href="/templates/index.html"> Home </a></li>
+                    <li><a href="/templates/create_invoice.html"> Create Invoice </a></li>
+                    <li><a href="/templates/view_stock.html"> View Stock </a></li>
+                    <li><a href="/templates/add_item.html"> Add Item </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+
+            <img src="/static/images/background.jpg" width="600" height="450" alt="server" class="server">
+            <div class="new-class">
+                <h1> Inventory Management System </h1>
+                <p class="subhead">This is the project made for Harward CS 50 as the final project. This project is made by Parthiv Panicker, Shomit Bhattacharya & Anish Aggrawal.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="first-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/static/images/createinvoice.png" alt="create_invoice" class="ci">
+                    <p> To select the required item, create invoice and generate transaction id. Please clink on the
+                        link below.</p>
+                    <a href="create_invoice.html" class="create_invoice"> Create Invoice </a>
+                </li>
+                <li>
+                    <img src="/static/images/viewstock.jpeg" alt="view_stock" class="vs">
+                    <p> To view, which items are available now in the inventory, please click on the link below.</p>
+                    <a href="view_stock.html" class="view_stock"> View Stock </a>
+                </li>
+                <li>
+                    <img src="/static/images/additem.png" alt="add_item" class="ai">
+                    <p> To add any new item to the inventory immediately, please click on the link below.</p>
+                    <a href="add_item.html" class="add_item"> Add Item </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function (e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+
+
+</body>
+
+</html>
