@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    padding: 0.8em 1.2em;
+}
+
+.logo {
+    width: 110px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 70px;
+    height: 45px;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(46, 55, 59);
+}
+
+nav ul li a:hover {
+    text-decoration: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1em;
+}
+
+.exit-btn img {
+    width: 60px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 650px) {
+    nav ul {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 875px) {
+    .container {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        color: black;
+        background: inherit;
+        text-align: right;
+    }
+    .exit-btn {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+}

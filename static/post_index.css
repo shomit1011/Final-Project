@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 0.8em 1.2em;
+}
+
+.logo {
+    width: 110px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 70px;
+    height: 45px;
+}
+
+.new-class {
+    display: block;
+    margin: 2em;
+    padding-left: 2em;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1,
+.subhead {
+    position: relative;
+    margin: 1.5em;
+}
+
+h1 {
+    text-decoration: underline;
+    margin-bottom: 1.7em;
+}
+
+.subhead {
+    font-size: 1em;
+}
+
+.first-container {
+    width: 100%;
+    background: rgb(107, 109, 112);
+    color: white;
+    margin-top: 50px;
+    padding: 1.5em 0 2em;
+    border-radius: 30px;
+}
+
+.first-container ul li {
+    margin-top: 1em;
+}
+
+.first-container ul li p {
+    padding: 0 0.5em;
+}
+
+.create_invoice {
+    background: rgb(0, 140, 255);
+    width: 50%;
+    display: block;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: underline;
+    font-size: 1em;
+    margin: 8% auto 5% auto;
+    position: relative;
+}
+
+.view_stock {
+    background: rgb(0, 140, 255);
+    width: 50%;
+    display: block;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: underline;
+    font-size: 1em;
+    margin: 8% auto 5% auto;
+    position: relative;
+}
+
+.add_item {
+    background: rgb(0, 140, 255);
+    width: 50%;
+    display: block;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: underline;
+    font-size: 1em;
+    margin: 8% auto 5% auto;
+    position: relative;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(46, 55, 59);
+}
+
+nav ul li a:hover {
+    text-decoration: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1em;
+}
+
+.exit-btn img {
+    width: 60px;
+    cursor: pointer;
+}
+
+.ci {
+    border-radius: 90px;
+    width: 30%;
+}
+
+.vs {
+    border-radius: 90px;
+    width: 30%;
+}
+
+.ai {
+    border-radius: 90px;
+    width: 25%;
+}
+
+@media only screen and (min-width: 650px) {
+    h1 {
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    .subhead {
+        font-size: 1.1em;
+        padding-top: 2%;
+        margin-bottom: 1em;
+    }
+    .first-container {
+        margin-top: -0.1px;
+    }
+    .first-container ul li img {
+        width: 25%;
+    }
+    .first-container ul {
+        display: flex;
+        margin-top: -1em;
+        align-items: center;
+    }
+    .first-container ul li {
+        margin-bottom: 0;
+    }
+    .first-container ul li p {
+        padding: 0 0.8em;
+    }
+    nav ul {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 875px) {
+    .subhead {
+        margin-top: 1em;
+        padding-bottom: 2em;
+    }
+    .first-container ul {
+        margin: 1.5em 0 1em;
+    }
+    .container {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        color: black;
+        background: inherit;
+        text-align: right;
+    }
+    .exit-btn {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .create_invoice :hover {
+        text-decoration: underline;
+    }
+    section {
+        display: flex;
+        text-align: center;
+    }
+}
